@@ -12,8 +12,8 @@ import fitz
 from PIL import Image
 
 BASE = Path(__file__).parent
-UPLOAD = BASE / "uploads"
-OUT = BASE / "outputs"
+UPLOAD = Path("/data/uploads")
+OUT = Path("/data/outputs")
 UPLOAD.mkdir(exist_ok=True)
 OUT.mkdir(exist_ok=True)
 
